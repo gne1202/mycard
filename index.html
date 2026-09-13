@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人名片</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 页面主内容：一张居中的个人名片 -->
+    <main class="business-card">
+        <!-- 头像区域：使用真实头像或替换为自己的风采图片 -->
+        <div class="avatar-wrap">
+            <img
+                class="avatar"
+                src="https://i.pravatar.cc/240?img=12"
+                alt="张晓明的头像"
+            >
+        </div>
+
+        <!-- 个人基本信息：姓名和职位说明 -->
+        <section class="profile-info" aria-labelledby="profile-name">
+            <p class="tag">个人简介</p>
+            <h1 id="profile-name">张晓明</h1>
+            <p class="job-title">产品设计师</p>
+        </section>
+
+        <!-- 联系方式列表：清晰介绍联系信息 -->
+        <address class="contact-info">
+            <div class="contact-item">
+                <span class="label">邮箱</span>
+                <a href="mailto:zhangxiaoming@example.com">zhangxiaoming@example.com</a>
+            </div>
+            <div class="contact-item">
+                <span class="label">电话</span>
+                <a href="tel:+8613800138000">+86 138 0013 8000</a>
+            </div>
+            <div class="contact-item">
+                <span class="label">网站</span>
+                <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">www.example.com</a>
+            </div>
+        </address>
+    </main>
+</body>
+</html>
