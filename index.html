@@ -2,44 +2,85 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人名片</title>
-    <link rel="stylesheet" href="style.css">
+    <title>中国传统文化故事：悬梁刺股</title>
+    <style>
+        body {
+            background-color: #eeeeee;
+            font-family: "Microsoft Yahei", sans-serif;
+            padding:30px;
+        }
+        .card{
+            width:1200px;
+            margin:0 auto;
+            background-color: #fffbdc;
+            border-radius:16px;
+            box-shadow: 5px 5px 12px #888888;
+            overflow:hidden;
+            padding-bottom:30px;
+        }
+        .lantern-img{
+            width:100%;
+            height:240px;
+            background-image: url('https://img0.baidu.com/it/u=379212134,3221213101&fm=253&fmt=auto&app=138&f=JPEG?w=1280&h=400');
+            background-size:cover;
+        }
+        h1{
+            text-align:center;
+            font-size:32px;
+            color:#222;
+            margin:20px 0;
+        }
+        .text-content{
+            padding:0 40px;
+            font-size:20px;
+            line-height:1.6;
+        }
+        .div-line{
+            border-bottom:2px solid #999;
+            margin:10px 40px 25px;
+        }
+        .list-wrap{
+            padding:0 60px;
+            font-size:22px;
+        }
+        .row{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .item{
+            text-align:center;
+            padding:8px;
+        }
+    </style>
 </head>
 <body>
-    <!-- 页面主内容：一张居中的个人名片 -->
-    <main class="business-card">
-        <!-- 头像区域：使用真实头像或替换为自己的风采图片 -->
-        <div class="avatar-wrap">
-            <img
-                class="avatar"
-                src="https://i.pravatar.cc/240?img=12"
-                alt="张晓明的头像"
-            >
+    <div class="card">
+        <!--顶部灯笼图-->
+        <div class="lantern-img"></div>
+        <h1>中国传统文化故事:悬梁刺股</h1>
+        <div class="div-line"></div>
+        <div class="text-content">
+            <p>我们伟大的祖国有非常悠久的历史。按照古代的传统说法，从传说中的黄帝到现在，大约有四千多年的历史，通常叫做“上下五千年”。期间流传有许多的神话，历史故事等。快来一起了解下我国的文化历史吧。</p>
+            <p>悬梁刺股这一历史典故表现了孙敬、苏秦好学勤读的刻苦精神，表明只要付出时间和精力就会有收获的道理，用以激励人发愤读书学习。如果想要把事情做成功，就要下定决心，目标明确。要肯吃苦，肯努力。世上无难事只怕有心人。</p>
         </div>
-
-        <!-- 个人基本信息：姓名和职位说明 -->
-        <section class="profile-info" aria-labelledby="profile-name">
-            <p class="tag">个人简介</p>
-            <h1 id="profile-name">张晓明</h1>
-            <p class="job-title">产品设计师</p>
-        </section>
-
-        <!-- 联系方式列表：清晰介绍联系信息 -->
-        <address class="contact-info">
-            <div class="contact-item">
-                <span class="label">邮箱</span>
-                <a href="mailto:zhangxiaoming@example.com">zhangxiaoming@example.com</a>
+        <div class="div-line"></div>
+        <div class="list-wrap">
+            <div class="row">
+                <div class="item">1. 悬梁刺股</div>
+                <div class="item">2. 画龙点睛</div>
+                <div class="item">3. 铁杵磨针</div>
             </div>
-            <div class="contact-item">
-                <span class="label">电话</span>
-                <a href="tel:+8613800138000">+86 138 0013 8000</a>
+            <div class="row">
+                <div class="item">4. 毛遂自荐</div>
+                <div class="item">5. 孔融让梨</div>
+                <div class="item">6. 水滴石穿</div>
             </div>
-            <div class="contact-item">
-                <span class="label">网站</span>
-                <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">www.example.com</a>
+            <div class="row">
+                <div class="item">7. 塞翁失马</div>
+                <div class="item">8. 自相矛盾</div>
+                <div class="item">9. 刻舟求剑</div>
             </div>
-        </address>
-    </main>
+        </div>
+    </div>
 </body>
 </html>
