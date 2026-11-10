@@ -2,85 +2,74 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>中国传统文化故事：悬梁刺股</title>
-    <style>
-        body {
-            background-color: #eeeeee;
-            font-family: "Microsoft Yahei", sans-serif;
-            padding:30px;
-        }
-        .card{
-            width:1200px;
-            margin:0 auto;
-            background-color: #fffbdc;
-            border-radius:16px;
-            box-shadow: 5px 5px 12px #888888;
-            overflow:hidden;
-            padding-bottom:30px;
-        }
-        .lantern-img{
-            width:100%;
-            height:240px;
-            background-image: url('https://img0.baidu.com/it/u=379212134,3221213101&fm=253&fmt=auto&app=138&f=JPEG?w=1280&h=400');
-            background-size:cover;
-        }
-        h1{
-            text-align:center;
-            font-size:32px;
-            color:#222;
-            margin:20px 0;
-        }
-        .text-content{
-            padding:0 40px;
-            font-size:20px;
-            line-height:1.6;
-        }
-        .div-line{
-            border-bottom:2px solid #999;
-            margin:10px 40px 25px;
-        }
-        .list-wrap{
-            padding:0 60px;
-            font-size:22px;
-        }
-        .row{
-            display:grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-        .item{
-            text-align:center;
-            padding:8px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蜀韵·成都 - 首页</title>
+    <!-- 引入外部样式 -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
-        <!--顶部灯笼图-->
-        <div class="lantern-img"></div>
-        <h1>中国传统文化故事:悬梁刺股</h1>
-        <div class="div-line"></div>
-        <div class="text-content">
-            <p>我们伟大的祖国有非常悠久的历史。按照古代的传统说法，从传说中的黄帝到现在，大约有四千多年的历史，通常叫做“上下五千年”。期间流传有许多的神话，历史故事等。快来一起了解下我国的文化历史吧。</p>
-            <p>悬梁刺股这一历史典故表现了孙敬、苏秦好学勤读的刻苦精神，表明只要付出时间和精力就会有收获的道理，用以激励人发愤读书学习。如果想要把事情做成功，就要下定决心，目标明确。要肯吃苦，肯努力。世上无难事只怕有心人。</p>
+
+    <!-- 页头区域 -->
+    <header>
+        <!-- 左侧：Logo和标题 -->
+        <div class="logo-area">
+            <!-- 这里可以使用一个真实的img标签，例如 <img src="logo.png" alt="Logo"> -->
+            <span>🐼 蜀韵·成都</span>
         </div>
-        <div class="div-line"></div>
-        <div class="list-wrap">
-            <div class="row">
-                <div class="item">1. 悬梁刺股</div>
-                <div class="item">2. 画龙点睛</div>
-                <div class="item">3. 铁杵磨针</div>
-            </div>
-            <div class="row">
-                <div class="item">4. 毛遂自荐</div>
-                <div class="item">5. 孔融让梨</div>
-                <div class="item">6. 水滴石穿</div>
-            </div>
-            <div class="row">
-                <div class="item">7. 塞翁失马</div>
-                <div class="item">8. 自相矛盾</div>
-                <div class="item">9. 刻舟求剑</div>
-            </div>
-        </div>
+        <!-- 右侧：导航栏 -->
+        <nav>
+            <ul>
+                <!-- 首页高亮显示，添加 active 类 -->
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="food.html">美食</a></li>
+                <li><a href="sights.html">景点</a></li>
+                <li><a href="culture.html">文化</a></li>
+                <li><a href="travel.html">攻略</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 全屏 Banner 轮播图区域 -->
+    <div class="banner">
+        <!-- 三张轮播图，通过CSS背景实现，JS控制切换 -->
+        <div class="slide active"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
     </div>
+
+    <!-- 主要内容容器 -->
+    <div class="container">
+        
+        <!-- 视频宣传区域 -->
+        <section class="video-section">
+            <h2 style="margin-bottom: 20px; color: var(--primary-gold);">成都印象</h2>
+            <!-- 视频占位，实际作业请替换 src 为本地视频文件 -->
+            <video controls poster="https://via.placeholder.com/800x450/eee/333?text=Video+Placeholder">
+                <source src="chengdu_promo.mp4" type="video/mp4">
+                您的浏览器不支持 HTML5 视频。
+            </video>
+        </section>
+
+        <!-- 文字介绍区域 (约300字) -->
+        <section class="intro-text">
+            <h3 style="margin-bottom: 15px;">关于成都</h3>
+            <p>
+                成都，简称“蓉”，别称蓉城、锦城，是四川省省会，也是中国西南地区的科技、商贸、金融中心和交通通信枢纽。作为一座拥有三千多年历史的文化名城，成都以其独特的“慢生活”节奏闻名于世。在这里，你可以看到憨态可掬的大熊猫在基地里嬉戏，那是成都最亮眼的名片；你可以走进宽窄巷子或锦里，感受古蜀文化的韵味与现代商业的碰撞。
+            </p>
+            <br>
+            <p>
+                成都是联合国教科文组织授予的“美食之都”。火锅的麻辣鲜香、串串的市井烟火、麻婆豆腐的回味无穷，构成了这座城市舌尖上的记忆。除了美食，成都的茶馆文化也极具特色，一把竹椅，一碗盖碗茶，便是成都人一下午的悠闲时光。这里既有高楼林立的现代化太古里，也有幽静深邃的武侯祠和杜甫草堂。成都，是一座来了就不想走的城市，它用包容和热情，等待着每一位旅人的到来，让你在繁华与宁静之间，找到心灵的归属。
+            </p>
+        </section>
+    </div>
+
+    <!-- 页尾区域 -->
+    <footer>
+        <p>&copy; 2023 蜀韵·成都文化旅游宣传网. 保留所有权利.</p>
+        <p>联系方式: contact@chengdu-tour.com | 地址: 四川省成都市天府大道</p>
+    </footer>
+
+    <!-- 引入外部脚本 -->
+    <script src="script.js"></script>
 </body>
 </html>
