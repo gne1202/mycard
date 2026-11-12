@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>文轩图书榜</title>
+    <style>
+        /* 基础重置与页面背景 */
+        body {
+            margin: 0;
+            padding: 30px;
+            background-color: #fff;
+            font-family: "SimSun", "宋体", "Microsoft YaHei", sans-serif; 
+            color: #333;
+        }
+
+        /* 页面大标题 */
+        .page-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        /* 图书详情主容器：使用 Flex 布局实现左图右文 */
+        .book-container {
+            display: flex;
+            width: 800px; 
+            gap: 20px; 
+        }
+
+        /* 左侧书籍封面 */
+        .book-cover {
+            width: 130px;
+            height: 175px; /* 微调高度比例，适应这张更清晰的竖版封面 */
+            border: 1px solid #e0e0e0; /* 浅灰色边框 */
+            padding: 2px;
+            background-color: #fff;
+            flex-shrink: 0; 
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.15); /* 增加一点立体阴影 */
+        }
+        
+        .book-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* 右侧信息区 */
+        .book-info {
+            flex: 1;
+            font-size: 13px; 
+            line-height: 1.8; 
+        }
+
+        /* 第一行：书名 */
+        .book-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* 特殊的红底白字 "99" 标签 */
+        .tag-99 {
+            background-color: #e4393c; 
+            color: #fff;
+            font-size: 12px;
+            padding: 1px 4px;
+            margin-right: 5px;
+            font-family: Arial, sans-serif;
+            font-weight: normal;
+            border-radius: 2px;
+        }
+
+        /* 第二行：评论数 */
+        .comments {
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        /* 第三行：作者与出版社 */
+        .author-pub {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        /* 红色的出版社 */
+        .publisher {
+            color: #e4393c;
+            font-weight: bold;
+        }
+
+        /* 第四行：内容简介 */
+        .description {
+            color: #333;
+            margin-bottom: 15px;
+            text-align: justify; 
+        }
+
+        /* 简介中需要加下划线的部分 */
+        .underline-text {
+            text-decoration: underline;
+            text-underline-offset: 3px; 
+        }
+
+        /* 第五行：价格区域 */
+        .price-area {
+            color: #666;
+            font-size: 13px;
+        }
+
+        /* 购买 收藏 链接样式 */
+        .action-links {
+            color: #666;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .action-links:hover {
+            color: #e4393c;
+        }
+
+        /* 现价：红色加粗 */
+        .current-price {
+            color: #e4393c;
+            font-weight: bold;
+            font-size: 14px;
+            margin-right: 5px;
+        }
+
+        /* 折扣信息 */
+        .discount {
+            margin-right: 15px;
+        }
+
+        /* 原价：带删除线，灰色 */
+        .original-price {
+            text-decoration: line-through;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- (1) 页面标题 -->
+    <div class="page-title">文轩图书榜</div>
+
+    <!-- 图书详情列表项 -->
+    <div class="book-container">
+        <!-- 左侧封面：已替换为你刚刚提供的超清完整封面图 -->
+        <div class="book-cover">
+            <img src="E8AAC5E42304865291E61507CFB44859.png" alt="99 Web前端开发技术">
+        </div>
+
+        <!-- 右侧详细信息 -->
+        <div class="book-info">
+            <!-- (2) 列表项内容 -->
+            <div class="book-title">
+                <span class="tag-99">99</span> Web前端开发技术：HTML5、CSS3、JavaScript（第3版）
+            </div>
+            
+            <div class="comments">(350条评论)</div>
+            
+            <div class="author-pub">
+                储久良 编著 &nbsp; 2018年07月 &nbsp; <span class="publisher">清华大学出版社</span>
+            </div>
+            
+            <div class="description">
+                全书详细地介<span class="underline-text">绍HTML、CSS、DIV、HTML5基础和CSS3应用、JavaScript、DOM与BOM、HTML5高级应用等部分的基本语法和关键应用。</span>
+            </div>
+            
+            <div class="price-area">
+                <span class="action-links">购买</span>
+                <span class="action-links">收藏</span>
+                <span class="current-price">47.60元</span>
+                <span class="discount">(8.0折)</span>
+                定价：<span class="original-price">¥ 59.50 元</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

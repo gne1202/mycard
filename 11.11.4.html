@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>巴城老街风景</title>
+    <style>
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            background-color: #fff;
+            padding: 30px;
+        }
+        
+        /* 顶部绿色标题栏 */
+        .header-banner {
+            background-color: #008000;
+            color: white;
+            text-align: right;
+            padding: 10px 30px;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* (2) 段落样式：首行缩进2字符，大小28px，行距1.5倍，字间距2px，下划线 */
+        .content-text {
+            font-size: 28px;
+            line-height: 1.5;
+            letter-spacing: 2px;
+            text-indent: 2em; /* 首行缩进 2 个字符 */
+            text-decoration: underline; /* 下划线 */
+            color: #333;
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+
+        /* 图片容器 */
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        /* (3) 页面内有阴影效果 (应用于图片) */
+        .image-gallery img {
+            width: 23%; /* 4张图平分宽度 */
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #008000; /* 模拟图中的绿框 */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); /* 阴影效果 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-banner">
+        巴城老街风景
+    </div>
+
+    <!-- (2) 段落内容 -->
+    <p class="content-text">
+        巴城老街位于江苏的阳澄湖。在江南，人们都喜欢吃又香又肥腻的阳澄湖大闸蟹，大闸蟹的产地就在巴城。相传第一个吃螃蟹的人巴解就是巴城老街的人。
+    </p>
+
+    <!-- 图片区域 (使用占位图) -->
+    <div class="image-gallery">
+        <img src="IMG_2266.JPG" alt="风景1">
+        <img src="IMG_2267.JPG" alt="风景2">
+        <img src="IMG_2268.JPG" alt="风景3">
+        <img src="IMG_2269.JPG" alt="风景4">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>京东商品导购</title>
+    <style>
+        /* 清空默认边距 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        /* (2) 导购区大小 740x620，圆角 15px，居中显示 */
+        .container {
+            width: 740px;
+            height: 620px;
+            background-color: #fff;
+            border-radius: 15px;
+            border: 2px solid #87CEFA; /* 浅蓝色外边框 */
+            padding: 20px 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        /* 标题样式 */
+        .container h1 {
+            color: #ff0000;
+            margin-bottom: 30px;
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        /* 商品列表容器 */
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+            height: 500px; 
+        }
+
+        /* (3) 凹槽边框、阴影 */
+        .product-item {
+            width: 210px;
+            height: 220px; 
+            border: 10px groove #9966cc;
+            box-shadow: 5px 5px 10px #ccc;
+            padding: 10px; 
+            box-sizing: border-box;
+            background-color: #fff;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            
+            /* 关键：隐藏溢出内容，防止图片撑破边框 */
+            overflow: hidden; 
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* 让内容从顶部开始，图片往上靠 */
+        }
+
+        /* (4) 鼠标悬停变虚线 */
+        .product-item:hover {
+            border-style: dashed;
+            border-color: #9999cc;
+        }
+
+        /* 文本排版 */
+        .product-item h3 {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        .product-item p.desc {
+            font-size: 12px;
+            color: #999;
+            margin-bottom: 5px;
+        }
+        .product-item p.price {
+            color: #e4393c;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 5px; 
+        }
+        
+        /* 图片样式：严格限制在框内 */
+        .product-item img {
+            /* 使用 max-width 和 max-height 确保图片绝对不会超出框 */
+            max-width: 100%; 
+            max-height: 110px; /* 限制图片最大高度，给上面的文字留出空间 */
+            object-fit: contain; /* 保持图片比例不变形 */
+            margin-top: auto; /* 让图片在剩余空间里居中偏下，视觉更平衡 */
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>京东商品导购</h1>
+        
+        <div class="product-list">
+            <!-- 商品 1 -->
+            <div class="product-item">
+                <h3>麦包包 Vinhas单肩包</h3>
+                <p class="desc">领券满减</p>
+                <p class="price">¥ 128</p>
+                <img src="image5-2-1.jpg" alt="麦包包">
+            </div>
+            
+            <!-- 商品 2 -->
+            <div class="product-item">
+                <h3>优购.adidas休闲鞋</h3>
+                <p class="desc">限时抢购</p>
+                <p class="price">¥ 365</p>
+                <img src="image5-2-2.jpg" alt="adidas休闲鞋">
+            </div>
+            
+            <!-- 商品 3 -->
+            <div class="product-item">
+                <h3>优购.NB女子复古鞋</h3>
+                <p class="desc">限时抢购</p>
+                <p class="price">¥ 299</p>
+                <img src="image5-2-3.jpg" alt="NB女子复古鞋">
+            </div>
+            
+            <!-- 商品 4 -->
+            <div class="product-item">
+                <h3>优购.VANS女子硫化鞋</h3>
+                <p class="desc">限时抢购</p>
+                <p class="price">¥ 280</p>
+                <img src="image5-2-4.jpg" alt="VANS女子硫化鞋">
+            </div>
+            
+            <!-- 商品 5 -->
+            <div class="product-item">
+                <h3>优购.匡威经典低帮鞋</h3>
+                <p class="desc">限时抢购</p>
+                <p class="price">¥ 199</p>
+                <img src="image5-2-5.jpg" alt="匡威经典低帮鞋">
+            </div>
+            
+            <!-- 商品 6 -->
+            <div class="product-item">
+                <h3>优购.Belle羊皮女鞋</h3>
+                <p class="desc">限时抢购</p>
+                <p class="price">¥ 398</p>
+                <img src="image5-2-6.jpg" alt="Belle羊皮女鞋">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
